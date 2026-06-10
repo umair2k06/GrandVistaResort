@@ -12,7 +12,7 @@ public class EmployeeController {
 
     public ObservableList<EmployeeModel> getAllEmployees() {
         employeeList.clear();
-        // Query layout matches your main5.java implementation exactly
+     
         String sql = "SELECT employee_id, first_name, last_name, job_role, email, phone, salary, work_shift, joining_date FROM Employee ORDER BY job_role, first_name";
 
         try (Connection con = DBconnection.getConnection();

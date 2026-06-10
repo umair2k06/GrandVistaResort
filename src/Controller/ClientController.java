@@ -4,7 +4,7 @@ import java.sql.*;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import model.ClientModel;     
-import model.main1;            // Imports main1 to access DBconnection
+import model.main1;           
 
 public class ClientController {
 

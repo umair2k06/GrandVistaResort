@@ -1,12 +1,12 @@
-# 🏨 GrandVistaResort 
+#  GrandVistaResort 
 
-## 📌 Project Overview & Core Description
+##  Project Overview & Core Description
 
 The **GrandVistaResort Management System** is a production-grade, desktop-based Enterprise Resource Planning (ERP) application designed to automate complex, multi-tier hospitality operations. Built using **JavaFX** for its presentation layer and backed by a relational **MySQL database server**, the platform provides a robust ecosystem for managing client life cycles, room inventories, staff allocations, and real-time financial auditing.
 
 To ensure long-term maintainability and prevent structural architectural decay, the application is strictly engineered around the **Model-View-Controller (MVC)** design pattern, achieving a complete **Separation of Concerns (SoC)** by isolating database transaction queries from GUI rendering logic.
 
-## ⚡ Key Architectural Engineering Features
+##  Key Architectural Engineering Features
 
 * **Advanced Relational Integrity:** Built upon a highly normalized 6-table relational schema using strict indexing constraints (`PRIMARY KEY`, `FOREIGN KEY`, `NOT NULL`, `UNIQUE`) to prevent data redundancy and anomalies.
 * **Transactional Reliability (Cascading & Restrictions):** Armed with `ON DELETE CASCADE` actions on the financial ledgers to automatically wipe out downstream receipts when a reservation parent row is removed, eliminating orphaned data clutter. Conversely, `FK RESTRICT` rules protect client and suite data from accidental deletion if they are tied to live, active bookings.

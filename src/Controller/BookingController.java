@@ -13,7 +13,7 @@ public class BookingController {
     public ObservableList<BookingModel> getAllBookings(String filter) {
         bookingList.clear();
 
-        // Matches the complex join query from main4.java exactly
+     
         String sql = "SELECT r.booking_id, CONCAT(g.first_name,' ',g.last_name), rm.door_number, " +
                 "rt.tier_name, r.check_in, r.check_out, DATEDIFF(r.check_out,r.check_in), " +
                 "r.book_status, r.grand_total, COALESCE(CONCAT(s.first_name,' ',s.last_name),'—') " +
